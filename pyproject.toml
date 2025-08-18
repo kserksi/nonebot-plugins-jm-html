@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot-plugin-jm-html"
+version = "0.1.0"
+description = "Generate mobile-first Bootstrap HTML pages for JM albums in NoneBot2, with temporary cache & optional password"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "jaykserks", email = "jaykserks@gmail.com" }
+]
+keywords = ["nonebot2", "plugin", "jmcomic", "bootstrap", "html", "gallery"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Framework :: AsyncIO",
+]
+
+dependencies = [
+  "nonebot2>=2.0",
+  "fastapi>=0.95",
+  "pydantic>=1.10,<3.0",
+  "jmcomic>=3.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/nonebot-plugin-jm-html"
+Repository = "https://github.com/yourname/nonebot-plugin-jm-html"
+Issues = "https://github.com/yourname/nonebot-plugin-jm-html/issues"
+
+[tool.setuptools]
+packages = ["nonebot_plugin_jm_html"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+nonebot_plugin_jm_html = ["py.typed"]
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_jm_html"]
