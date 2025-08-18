@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://nonebot.dev/store/plugins">
-    <img src="https://github.com/StillMisty/nonebot_plugin_jm/raw/main/docs/NoneBotPlugin.svg" width="300" alt="logo">
+    <img src="./image/NoneBotPlugin.svg" width="300" alt="logo">
   </a>
 </div>
 <div align="center">
