@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ version = "0.1.0"
 description = "Generate mobile-first Bootstrap HTML pages for JM albums in NoneBot2, with temporary cache & optional password"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { file = "LICENSE" }
+license = "MIT"
+license-file = "LICENSE"
 authors = [
   { name = "jaykserks", email = "jaykserks@gmail.com" }
 ]
