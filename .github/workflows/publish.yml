@@ -3,12 +3,14 @@ name: Publish NoneBot Plugin 🦋 to PyPI
 on:
   push:
     tags:
-      - 'v*.*.*'  # 语义化版本标签 (e.g., v1.0.0)
+      - 'v*.*.*'
 
 jobs:
   publish-nonebot-plugin:
     runs-on: ubuntu-latest
-    environment: production  # 明确环境为生产环境
+    environment: production
+    permissions:
+      id-token: write
 
     steps:
       - name: 🛎️ Checkout repository
