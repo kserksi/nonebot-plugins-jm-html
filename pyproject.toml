@@ -27,7 +27,8 @@ dependencies = [
   "pydantic>=2.0,<3.0",
   "jmcomic>=2.5.0",
   "pydantic-settings>=2.0.0",
-  "pillow>=11.0.0"
+  "pillow>=11.0.0",
+  "commonx>=0.6.38"
 ]
 
 [project.urls]
