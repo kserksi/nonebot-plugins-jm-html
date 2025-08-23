@@ -28,9 +28,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourname/nonebot-plugin-jm-html"
-Repository = "https://github.com/yourname/nonebot-plugin-jm-html"
-Issues = "https://github.com/yourname/nonebot-plugin-jm-html/issues"
+Homepage = "https://github.com/kserksi/nonebot-plugin-jm-html"
+Repository = "https://github.com/kserksi/nonebot-plugin-jm-html"
+Issues = "https://github.com/kserksi/nonebot-plugin-jm-html/issues"
 
 [tool.setuptools]
 packages = ["nonebot_plugin_jm_html"]

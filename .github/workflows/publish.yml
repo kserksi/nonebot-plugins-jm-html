@@ -1,34 +1,39 @@
-name: Publish Python Package
+name: Publish NoneBot Plugin 🦋 to PyPI
 
 on:
   push:
     tags:
-      - 'v*.*.*'  # 例如 v0.1.0
+      - 'v*.*.*'  # 语义化版本标签 (e.g., v1.0.0)
 
 jobs:
-  build-and-publish:
+  publish-nonebot-plugin:
     runs-on: ubuntu-latest
+    environment: production  # 明确环境为生产环境
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: 🛎️ Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: 🐍 Set up Python 3.10
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"  # 可修改为 >=3.9
+          python-version: "3.10"
+          cache: 'pip'
 
-      - name: Install build dependencies
+      - name: 🔨 Install build dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install build twine
+          pip install --upgrade pip
+          pip install build
 
-      - name: Build package
+      - name: 📦 Build plugin package
         run: |
           python -m build --sdist --wheel
+        env:
+          PIP_CACHE_DIR: "./.cache/pip"
 
-      - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish
+      - name: 🚀 Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
+          packages-dir: dist/
