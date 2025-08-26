@@ -18,13 +18,13 @@
 使用 nb-cli 安装插件
 
 ```shell
-nb plugin install nonebot_plugin_jm_html
+nb plugin install nonebot_plugins_jm_html
 ```
 
 使用 pip 安装插件
 
 ```shell
-pip install nonebot_plugin_jm_html
+pip install nonebot_plugins_jm_html
 ```
 
 ## 🕹️ 使用
