@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import List
 
-from jmcomic import JMComic  # 确保安装 jmcomic>=3.6
+from jmcomic import JMComic
 
 
 @dataclass

@@ -16,7 +16,7 @@ __plugin_meta__ = PluginMetadata(
     description="Download JM album and generate a mobile-first Bootstrap HTML gallery with temp cache & password",
     usage="/jm <album_id>",
     type="application",
-    homepage="https://github.com/yourname/nonebot-plugin-jm-html",
+    homepage="https://github.com/kserksi/nonebot-plugins-jm-html/",
 )
 
 # 从 Driver 配置读取插件配置
