@@ -8,7 +8,7 @@ from nonebot.plugin import PluginMetadata
 from nonebot.exception import FinishedException
 from nonebot.matcher import current_bot, current_event
 
-from .config import Config
+from .config import plugin_config
 from .handlers import handle_jm
 
 __plugin_meta__ = PluginMetadata(

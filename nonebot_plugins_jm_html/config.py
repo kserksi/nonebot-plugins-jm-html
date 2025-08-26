@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
 
 
-class Config(BaseSettings):
+class Config(BaseSettings,extra=Extra.ignore):
     """
     NoneBot 插件配置
     """

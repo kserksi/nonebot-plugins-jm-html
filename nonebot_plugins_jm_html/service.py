@@ -13,6 +13,7 @@ from nonebot import get_driver
 from .fetcher import fetch_album
 from .templates import render_album_html
 from .routers import build_router
+from .config import plugin_config
 
 @dataclass
 class CacheEntry:

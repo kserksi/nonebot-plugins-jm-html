@@ -7,7 +7,7 @@ from nonebot.exception import FinishedException
 from nonebot.matcher import current_bot, current_event
 
 from .service import get_existing_link, ensure_album_ready
-from .config import Config
+from .config import plugin_config
 
 # 读取全局配置
 _cfg: Config = Config.parse_obj(get_driver().config)
