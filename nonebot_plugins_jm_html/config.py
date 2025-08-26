@@ -1,6 +1,6 @@
 from __future__ import annotations
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import Field
+from pydantic import Field, Extra
 
 
 class Config(BaseSettings,extra=Extra.ignore):
