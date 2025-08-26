@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nonebot-plugins-jm-html"
+name = "nonebot-plugin-jm-html"
 version = "1.0.3"
 description = "Generate mobile-first Bootstrap HTML pages for JM albums in NoneBot2, with temporary cache & optional password"
 readme = "README.md"
