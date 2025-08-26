@@ -45,4 +45,4 @@ include-package-data = true
 nonebot_plugin_jm_html = ["py.typed"]
 
 [tool.nonebot]
-plugins = ["nonebot_plugins_jm_html"]
+plugins = ["nonebot_plugin_jm_html"] 
